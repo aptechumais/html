@@ -1,0 +1,13 @@
+div{
+    background-color: aquamarine;
+    opacity: 0.3;
+
+}
+body{
+    background-image: url("./images/mavis-hopper-692bIYtPq-s-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: 1400px 900px;
+    
+}
