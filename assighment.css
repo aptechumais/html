@@ -1,0 +1,290 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b0b14;
+    color: #ffffff;
+}
+
+/* Navbar */
+header {
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #11111e;
+    border-bottom: 1px solid #ffffff12;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.logo span,
+h2 span,
+.hero h1 span {
+    color: #a855f7;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: #ccccdc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c084fc;
+}
+
+.nav-btn {
+    color: white;
+    background: #8b5cf6;
+    text-decoration: none;
+    padding: 11px 20px;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.nav-btn:hover,
+.btn:hover {
+    background: #7c3aed;
+    transform: translateY(-3px);
+}
+
+/* Hero */
+.hero {
+    min-height: 470px;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+    background:
+        linear-gradient(90deg, #0b0b14 15%, #0b0b14dd 50%, #0b0b1455),
+        url("https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1600&q=85")
+        center/cover;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.tag {
+    color: #c084fc;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 62px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #b6b6c8;
+    line-height: 1.8;
+    max-width: 460px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    color: white;
+    background: #8b5cf6;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Games */
+.games {
+    padding: 75px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title p {
+    color: #c084fc;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.section-title h2 {
+    font-size: 34px;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #151522;
+    border: 1px solid #ffffff12;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #a855f7;
+    box-shadow: 0 12px 35px #8b5cf622;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: 0.4s;
+}
+
+.card:hover img {
+    transform: scale(1.04);
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card-content {
+    padding: 23px;
+}
+
+.category {
+    display: inline-block;
+    color: #d8b4fe;
+    background: #8b5cf622;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.card h3 {
+    margin: 16px 0 10px;
+    font-size: 19px;
+}
+
+.card p {
+    color: #aaaabd;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.card-content a {
+    color: #c084fc;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.card-content a:hover {
+    color: white;
+}
+
+/* About */
+.about {
+    text-align: center;
+    padding: 70px 8%;
+    background: #131321;
+}
+
+.about h2 {
+    font-size: clamp(25px, 4vw, 34px);
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: #b6b6c8;
+    max-width: 600px;
+    margin: 0 auto 28px;
+    line-height: 1.9;
+}
+
+/* Footer */
+footer {
+    padding: 28px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: #0b0b14;
+}
+
+footer p {
+    color: #9292a6;
+    font-size: 12px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 750px) {
+    header {
+        padding: 20px 5%;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .hero {
+        padding: 75px 6%;
+    }
+
+    .games {
+        padding: 60px 6%;
+    }
+
+    .game-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: 230px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto;
+        transition: none;
+    }
+}
