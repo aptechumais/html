@@ -1,0 +1,7 @@
+.card{
+    background-color: aqua;
+    clip-path: circle(100px at 100px 100px);
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 5%, 95% 95%, 5% 95%);
+}

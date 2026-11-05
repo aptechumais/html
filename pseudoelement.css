@@ -1,0 +1,18 @@
+p::first-line{
+    background-color: aqua;
+}
+p::first-letter{
+    font-size: 45px;
+}
+p::selection{
+    background-color: blue;
+    color: aqua;
+}
+
+blockquote::after{
+    content: "---urooj jaan";
+
+}
+blockquote::before{
+    content: "jon cena--";
+}

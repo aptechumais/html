@@ -1,0 +1,40 @@
+/* .box{
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    position: sticky;
+    bottom: 0px;
+    left: 100px;
+} */
+/* .box{
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    position: fixed;
+    bottom: 100px;
+    left: 100px;
+} */
+ /* .box{
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+} */
+ /* .box{
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    position: relative;
+    top: 100px;
+    left: 100px;
+} */
+ .box{
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    position: static;
+    top: 100px;
+    left: 100px;
+}
